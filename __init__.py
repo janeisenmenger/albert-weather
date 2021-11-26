@@ -12,7 +12,7 @@ import requests
 
 __title__ = "Weather"
 __version__ = "0.0.1"
-__triggers__ = "weather "
+__triggers__ = "weather"
 __authors__ = "Jan Eisenmenger"
 
 def get_config_path(): 
@@ -93,7 +93,7 @@ def handleQuery(query):
                 id = 'current-weather',
                 icon = weather_icon_location,
                 text = weather_description, 
-                subtext = '', 
+                subtext = location.city, 
                 actions = [
                 ]
     )]
